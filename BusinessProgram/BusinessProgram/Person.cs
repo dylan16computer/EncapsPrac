@@ -11,10 +11,11 @@ namespace BusinessProgram
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
-        public Person(string _firstName, string _lastName, int _age)
+
+        public Person(string _fName, string _lName, int _age)
         {
-            FirstName = _firstName;
-            LastName = _lastName;
+            FirstName = _fName;
+            LastName = _lName;
             Age = _age;
         }
     }

@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace BusinessProgram
 {
-    class VIPCustomer
+    class VIPCustomer : Customer
     {
-        public float Discount { get; set; }
+        public VIPCustomer(string _fName, string _lName, int _age) : base(_fName, _lName, _age)
+        {
+        }
+
+        public double Discount = 10.5;
     }
 }

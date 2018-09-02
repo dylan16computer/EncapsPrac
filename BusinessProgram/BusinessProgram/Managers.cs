@@ -8,9 +8,13 @@ namespace BusinessProgram
 {
     class Managers : Employee
     {
-        public bool Admin { get; set; }
-        public Managers(string _firstName, string _lastName, int _age) : base(_firstName, _lastName, _age)
+        public Managers(string _fName, string _lName, int _age, decimal _wages, double _tax, bool _admin) : base(_fName, _lName, _age, _wages, _tax)
         {
+            Admin = _admin;
         }
+
+        public bool Admin { get; set; }
+       
+
     }
 }

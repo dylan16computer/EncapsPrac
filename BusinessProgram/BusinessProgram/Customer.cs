@@ -8,13 +8,15 @@ namespace BusinessProgram
 {
     class Customer : Person
     {
-        public Customer(string _firstName, string _lastName, int _age) : base(_firstName, _lastName, _age)
-        {
+        public int purchNum { get; set; }
 
+        public Customer(string _fName, string _lName, int _age) : base(_fName, _lName, _age)
+        {
         }
+
         public int PurchCount()
         {
-
+            return purchNum++;
         }
     }
 }
